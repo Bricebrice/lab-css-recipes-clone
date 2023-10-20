@@ -1,9 +1,94 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
-}
-/*Import the font and set the default size*/
+/* CSS RESET - do not remove */
+/* Reset default browser styles and provide a consistent starting point */
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+/*  Set the font */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* STYLES */
+/* Write your CSS below */
+
+/* Set the header */
+header {
+  background-image: url("../images/soup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 0 auto;
+  font-size: 90px;
+  color: #fff;
+}
+/* Set the fonts */
+h2 {
+  font-weight: 700;
+}
+p {
+  font-size: 18px;
+}
+/* Set the content*/
+article {
+  padding: 5% 10%;
+}
+#introduction,
+#ingredients,
+#directions {
+  margin: 36px 0;
+}
+.cooking-info {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px auto;
+}
+/* Set lists */
+ul,
+ol {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+}
+.lists {
+  padding: 18px 0 0 18px;
+}
+ul li::before {
+  content: "- ";
+}
+ol li {
+  list-style-type: decimal;
 }
